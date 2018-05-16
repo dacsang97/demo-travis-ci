@@ -1,11 +1,16 @@
 language: node_js
 node_js:
-  - "8"
+- '8'
 cache:
   yarn: true
   directories:
-    - "node_modules"
+  - node_modules
 install:
-  - yarn
+- yarn
 script:
-  - yarn generate
+- yarn generate
+deploy:
+  provider: firebase
+  token:
+    secure: kVGH2jOTaqaZzoRke8jKeoHFWXVQ1ZIe3Gu4B5Z0kGL+5iiJdZhclbN1D9p6T/AsslLQKJFa6T9PPiaWkhgj++U5w5RSk4nbLgsObPddNRW0l/KpUQtX1Pm5DLIqT0u4xXTFYAw46mO6UryPa9qSJCS9cyOmzIlJ22SRpL/BJXVSsmuV4tpJlffVvWa8CI/Yh7cFjw2fz+5kNj5W6eEKfIQWfP4Sd5Vw1mCNoQdX63xxAZsim15DAAoe20PkoCptLZGEX6Ie6Cy94ItjHuLGP/cWKeuEWVB4OKwRZVW2d4eVSmUIpMDOTwF8xxOWjlpU9n1uXJs5G6hLLdsxpNalZ3jeIAzhUEMBjsAwZo00RyRuh3yWK8Popwa5fxXjwng3ZkADS0qr6AI3xg6TemGJDjfV4K7ToSxGhFpMXETP3uitTxAJDfDTUaDFA8mQgZCTCCTsf/LqpsRKY7944B3akyKnLVq++G4uLPq/4ayJsHPPJZWlCLxvhK11jJ09yfUDnusozFYnBNt74awpdaX09ruLvKTkt5zgL+3Xa6B7TJWyFfzEw3aQkTja2zshnbqIeCW3XSXxM+NBkFYjVvj567VA2Y9DP8XhlNt+l9RF+31smgAUA38gwRqTOtwgvejjyDGpLnOAxbCn5rkr33+9ukr1n3vROJRGfwT2h0FXag4=
+  message: "Test message"
