@@ -3,7 +3,7 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        demo-travis-ci
+        Test Auto deploy
       </h1>
       <h2 class="subtitle">
         Nuxt.js project
